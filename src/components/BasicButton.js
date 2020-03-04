@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
   },
   text: {
-    fontFamily: 'open-sans-bold',
+    fontFamily: 'OpenSans-Bold',
     textTransform: 'uppercase',
     color: 'black',
     fontSize: 24,

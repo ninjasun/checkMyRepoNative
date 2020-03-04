@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   text: {
-    fontFamily: 'open-sans-bold',
+    fontFamily: 'OpenSans-Bold',
     fontSize: 20,
     color: 'black',
   },

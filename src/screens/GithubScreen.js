@@ -40,18 +40,8 @@ export default function GithubScreen({navigation, route}) {
 
   return (
     <View style={{...styles.container, backgroundColor: store.backgroundColor}}>
-      <Text
-        style={{
-          fontFamily: 'open-sans-extrabold',
-          fontSize: 24,
-          marginBottom: 40,
-          marginTop: -20,
-        }}>
-        Set the repository address
-      </Text>
-      <Text style={{fontFamily: 'open-sans-regular', fontSize: 50}}>
-        github.com
-      </Text>
+      <Text style={styles.title}>Set the repository address</Text>
+      <Text style={styles.subTitle}>github.com</Text>
       <LinkButton
         title={store.user}
         styleText={styles.linkText}
@@ -91,15 +81,25 @@ const styles = StyleSheet.create({
     padding: 30,
   },
   linkText: {
-    fontFamily: 'open-sans-regular',
+    fontFamily: 'OpenSans-Regular',
     fontSize: 50,
   },
   errorText: {
-    fontFamily: 'open-sans-regular',
+    fontFamily: 'OpenSans-Regular',
     fontSize: 26,
     marginTop: 10,
   },
   boldText: {
-    fontFamily: 'open-sans-extrabold',
+    fontFamily: 'OpenSans-ExtraBold',
+  },
+  title: {
+    fontFamily: 'OpenSans-ExtraBold',
+    fontSize: 24,
+    marginBottom: 40,
+    marginTop: -20,
+  },
+  subTitle: {
+    fontFamily: 'OpenSans-Regular',
+    fontSize: 50,
   },
 });

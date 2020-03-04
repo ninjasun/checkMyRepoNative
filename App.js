@@ -29,7 +29,7 @@ const NetworkProvider = function() {
 
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener(state => {
-      console.log('state.isConnected: ', state.isConnected);
+      console.log('** CONNECTION ACTIVE ** ', state.isConnected);
       dispatch({type: 'CONNECTION', payload: state.isConnected});
     });
 
